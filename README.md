@@ -10,7 +10,13 @@ The dataset for this project is taken from the [UCI Machine Learning Repository]
   - Petal Length
   - Petal Width
 
-**Working of the iris_decision_tree_classifier**
+**Working of the decision_tree_classifier**
 - The program takes data from the `iris.csv` file loaded on the system.
 - The program then creates a decision tree based on the dataset for classification.
 - The user is then asked to enter the four parameters of his sample and prediction about the species of the flower is printed to the user.
+
+**Working of the self_made_KNN**
+- The program takes data from the `iris.csv` file loaded on the system.
+- The program splits the dataset into two subsets: *Training Data* and *Testing Data* by `80:20` ratio using `train_test_split` function in `sklearn` module.
+- The program calculates the accuracy for the classifier using `accuracy_score` function in `sklearn.metrics` module by predicting *Test Data* and matching the calculated result with the actual result.
+- The classifier is based on the `KNearestNeighbor` classifier in `sklearn` module, which finds the closest data point of the given sample and assign the species of that point to the sample. 
